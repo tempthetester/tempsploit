@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .product {
+            border: 1px solid #444;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0px 0px 15px 5px #444;
+        }
+        .product h2, .product p {
+            text-shadow: 2px 2px 4px #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <h2>Product 1</h2>
+        <p>Description of product 1</p>
+        <button onclick="addToCart('Product 1')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <h2>Product 2</h2>
+        <p>Description of product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <script>
+        function addToCart(product) {
+            alert(product + ' has been added to your cart!');
+        }
+    </script>
+</body>
+</html>
 
